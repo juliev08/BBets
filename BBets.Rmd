@@ -1,12 +1,12 @@
 ---
 title: "Brownlows Bets"
-author: "Your Name Goes Here"
+author: "Juliana Villa"
 output: 
   html_document:
     number_sections: true
     toc: true
     toc_depth: 5
-date: "`r Sys.Date()`"    
+date: "6 June 2024"    
     
 ---
 ```{r setup, include=FALSE}
