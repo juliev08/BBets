@@ -104,7 +104,7 @@ print(lci)
 print(uci)
 ```
 
-
+In order for the 2:1 payoff to be fair, the class should be about 28 students.  
 
 # Discussion and Conclusion
 
