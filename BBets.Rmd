@@ -90,25 +90,22 @@ The amount of money Dr.J would have to pay is $4.50
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
-
-
-
-
-
-
-
-
-
-<!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
-
-
-
-
-
+```{r}
+bank = vector('numeric')
+for (i in 1:100) {
+  bank[i] = BrLw(28, 2, 637)
+}
+meanbank=mean(bank)
+print(mean(bank))
+hist(bank)
+lci=mean(bank)-sqrt(var(bank))*1.96
+uci=mean(bank)+sqrt(var(bank))*1.96
+print(lci)
+print(uci)
+```
 
 
 
 # Discussion and Conclusion
 
-<!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
-
+2:1 bet is about fair for 28 people in class.
